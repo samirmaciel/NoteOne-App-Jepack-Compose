@@ -14,7 +14,7 @@ import com.samirmaciel.jetpackcompose_noteone.R
 
 @Composable
 fun SplashScreen(){
-    ImageBackground()
+    ScreenBackground()
     Column(modifier = Modifier.fillMaxSize(), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
         Image(
             painter = painterResource(id = R.drawable.noteone_logo),
@@ -24,7 +24,7 @@ fun SplashScreen(){
 }
 
 @Composable
-fun ImageBackground() {
+fun ScreenBackground() {
     val backgroundPainter = painterResource(id = R.drawable.noteone_background)
     Box(modifier = Modifier.fillMaxSize()) {
         Image(
